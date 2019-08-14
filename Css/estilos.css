@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/*Inicio Variables*/
+:root{
+
+--green-color:#7ACC2D;
+--white-color: white;
+--black-color: #313337;
+
+--space: 10px;
+
+--normal: 12px;
+
+--box:0px 0 2px 1px #e6e5e9;
+}
+
+/*Fin variables*/
+
+
+html,body{
+
+	padding: 0px;
+	margin: 0px;
+	font-size: var(--normal);
+	font-family: 'Open Sans', sans-serif;
+}
+/*Inicio barra de navegacion*/
+nav{
+
+	display: flex; /*Forma en que se despliega y muestra en horizontal y no vertical*/
+	background-color: var(--green-color);
+	padding: var(--space);
+	color: var(--white-color);
+	justify-content: space-between;/* define cómo el navegador distribuye el espacio */
+	/*entre y alrededor de los items flex, a lo largo del eje principal de su contenedor.*/
+	align-items: center;/*Alinea los items hacia el centro*/
+}
+
+nav ul{
+
+	display: flex; 
+}
+
+nav li{
+
+	padding-left: 20px;
+	list-style: none;/*Retira la bola por defecto de los elementos de la lista*/
+}
+
+nav li a{
+
+	color: var(--black-color);
+	text-decoration: none;/*Quita la decoracion por defecto al ser un link*/
+}
+
+nav li a:hover{/*Accion al estar sobre el elemento*/
+
+	color: var(--white-color);	
+}
+/*Fin barra de navegacion*/
+
+/*Titulo*/
+.main_section{
+
+	padding: 15%;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+/*Fondo curva, productos, descripcion e imagenes cajas*/
+.products{
+
+	background-image: url("../Imagenes/curve.png");/*Traer una imagen al css*/
+	max-height: 40px;
+	background-size: cover;/*Ocupar el tamaño del div que lo contiene*/
+	background-position: center top;/*Alinea al centro y hacia arriba*/
+	padding: 10%;
+	display: flex;
+}	
+
+.product{
+
+	padding: 100px;
+	margin-top: -320px;
+	margin-left: 50px;
+}
+
+.product .content{
+	
+	background-color: var(--white-color);
+	padding: var(--space);
+	box-shadow: var(--box);
+}
+
+.img_content{
+
+	text-align: center;
+}
+
+.main_button{
+
+	background-color: var(--green-color);
+	width: 100%;
+	padding: var(--space);
+	font-size: var(--normal);
+	color: var(--white-color);
+	border: 0;
+	cursor: pointer;/*Despliega el apuntador sobre el boton para que 
+	se despliegue la mano cuando este sobre el boton*/
+	border-radius: 2px;
+}
+
+.main_button:hover{
+
+	background-color: #5e9e22;
+}
+
+
+.characteristics{
+
+	padding: 10%;
+	display: flex;
+}
+
+.characteristic{
+
+	padding: 10px;
+	margin-top: -30px;
+	margin-left: 170px;
+}
+
+.characteristics h1{	
+	
+	font-size: 17px;
+}
+
+.mentions{
+
+	padding: 10%;
+	display: flex;
+
+}
+
+.mention{
+
+	padding: -10px;
+	margin-top: -120px;
+	margin-left: 80px;
+	box-shadow: var(--box);
+	border-radius: 3px;
+
+}
+
+.mentions_section{	
+	
+	
+	font-size: 12px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 70px;
+}
+
+.second_section{
+
+	margin-top: -60px;
+	box-shadow: var(--box);
+	padding-top: -100px;
+}
+
+.mentions .img_content img{
+
+	border-radius: 3px;
+	width:225px; 
+	height:95px;
+}
+
+.mentions .ment_content{
+
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: -10px;
+}
+
+footer{
+
+	margin-top: -100px;
+	height:100px;
+	background-color: var(--black-color);
+}
+
+
+footer ul{
+
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer li{
+
+	margin-top: 10px;
+	margin-left: -15px;
+	margin-right: 30px;
+	list-style: none;
+}
+
+footer li a{
+
+	color: var(--white-color);
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,29 @@
+@media (max-width: 600px) {/*Debajo de los 600 pixeles activa el contenido*/
+
+	.products{
+
+		display: inherit;/*Alinea de forma vertical.Hace que el 
+		elemento al cual se aplica tome el valor calculado de 
+		la propiedad de su elemento padre.
+		Productos en vertical*/
+
+		height: auto;/*Retira la altura determinada, volvera a un estado
+		normal al crecer la pantalla*/
+	}
+
+	.product{
+
+		margin-top: auto;/*Regresa el margin de product hacia arriba
+		con esto los productos estan alineados*/
+	}
+
+	.main_section{
+
+		padding: 4%;/*Dismuirlo porque es muy grande para version mobile*/
+	}
+
+	.characteristics, .mentions{
+
+		display: inherit;/*Alinea de forma vertical los elementos*/
+	}
+}

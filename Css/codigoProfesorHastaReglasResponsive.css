@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+
+/*------ Variables */
+:root{
+  /*------ Colores */
+  --green-color: #7ACC2D;
+  --black-color: #313337;
+  --white-color: white;
+  /*------ Tipografía */
+  --normal:12px;
+  /*------ Espaciado */
+  --space:10px;
+  --space-2:20px;
+
+  /*-----Box shadow */
+  --box:  0px 0 2px 1px;
+}
+
+/* -------------------------------------------  */
+html, body{
+  margin:0;
+  padding: 0;
+  font-family: helvetica;
+  color: var(--black-color);
+}
+
+p, label{
+  font-size: var(--normal);
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: var(--space);
+  min-height: 60px;
+  background-color: var(--green-color);
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: var(--normal);
+}
+
+nav a:hover{
+  color: var(--white-color);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li{
+  padding-right: 20px;
+  list-style: none;
+}
+
+hr{
+  opacity: .2;
+}
+
+/* ------------------------------------------- MAIN SECTION */
+
+.main_section{
+  text-align: center;
+  padding: 15%;
+}
+
+/* -------------------------------------------  PRODUCTOS */
+
+.products{
+  background-image: url("../images/curve.png");
+  padding: 15%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 95px;
+  background-size: cover;
+
+}
+
+.product{
+  padding: 20px;
+  margin-top: -226px;
+}
+
+.image-product{
+  text-align: center;
+}
+
+.content{
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 3px;
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+
+.main_btn{
+  padding: var(--space);
+  background-color: var(--green-color);
+  width: 100%;
+  border: 0px;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--white-color);
+}
+.main_btn:hover{
+  background-color: #63a426;
+}
+
+/* Beneficios */
+.beneficios{
+  padding: 10%;
+  display: flex;
+}
+
+.beneficio{
+  text-align: center;
+  padding: 20px;
+}
+
+.beneficio img{
+  max-height: 100px
+}
+
+.title_beneficio{
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title-product{
+  
+  margin-left: 142px;
+  margin-top: 180px;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.text_beneficio{
+  text-align: justify;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Mentions */
+.mentions{
+  display: flex;
+  padding: 5%;
+}
+.mention img{
+  width: 100%;
+}
+h2.mention_title{
+  text-align: center;
+}
+.mention{
+  padding: var(--space);
+}
+.content_mention{
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+.mention .text{
+  padding: var(--space);
+}
+
+.modulo_pago{
+
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space-2);
+}
+
+.modulo_pago_imagenes{
+
+  max-width: 150px;
+  text-align: center;
+  margin: auto;/*Iguala el margen de lado izq y derecho para centrar la imagen*/
+}
+
+.data{
+
+  margin-top: var(--space);
+  width: 100%;
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);/*Para evitar que se sobreponga demasiado
+  sobre el border radius y se vea muy grueso*/
+  box-sizing: border-box;/*Hace que las dimensiones de un elemento sean 
+  calculados como: ancho = ancho del contenido, altura = altura del 
+  contenido.*/
+}
+
+.modulo_pago .main_btn{
+
+  margin-top: 10px;
+}
+/* ------------------------------------------- Footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+}
+
+
